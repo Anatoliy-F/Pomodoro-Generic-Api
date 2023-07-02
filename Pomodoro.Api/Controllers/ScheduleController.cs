@@ -27,8 +27,6 @@ namespace Pomodoro.Api.Controllers
         {
         }
 
-        // TODO : Add remarks to describe endpoints. When create schedule all template correspond to utc date and days of week.
-
         /// <summary>
         /// Update schedule only if ScheduleType, template, start and finish date don't change,
         /// otherwise create new Schedule, or delete all related tasks.
