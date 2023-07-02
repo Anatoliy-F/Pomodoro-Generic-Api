@@ -65,7 +65,7 @@ builder.Host.UseSerilog((ctx, lc) => lc
     .ReadFrom.Configuration(ctx.Configuration)
     .WriteTo.MSSqlServer(
         connectionString:
-        ctx.Configuration.GetConnectionString("PomodoroBE"),
+        ctx.Configuration.GetConnectionString("LocalDB"),
         restrictedToMinimumLevel: LogEventLevel.Information,
         sinkOptions: new MSSqlServerSinkOptions
         {
